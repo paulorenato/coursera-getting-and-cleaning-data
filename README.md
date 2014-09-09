@@ -38,13 +38,12 @@ In steps 1, and 2. above, activity numbers are replaced with its associated acti
 	Selects only the columns with mean and std 
 	Groups by Subject, Activity 
 	Summarizes each group by calaculating the mean for each of the variables
-	
+7. Finally, the resulting tidy set i written into a tidy.txt file. The cript uses write.table() defaults.
+   User can read the data set with: read.table("tidy.txt", header = TRUE)
+
 Note: Problem is ambiguous as to whether "mean" can be any part of the variable name.
 In this script, I decided to use only names with 'std()' and 'mean()' so it returns the same number of elements for each (33). 
 An alternate 'select' statement is proviced if user wants *any* variable with 'mean' or 'std' in the name
-
-7. Finally, the resulting tidy set i written into a tidy.txt file. The cript uses write.table() defaults.
- User can read the data set with: read.table("tidy.txt", header = TRUE)
 
 ## End
 
