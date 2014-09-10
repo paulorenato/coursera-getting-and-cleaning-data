@@ -68,8 +68,8 @@ tbl_df(df_combined) -> tidy
 # select(contains("std"), contains("mean")) %>%
 tidy <- tidy %>%
 	select(matches("std\\(\\)"), matches("mean\\(\\)"), Activity, Subject) %>%
-    group_by(Subject,Activity) %>%
-	summarise_each(funs(mean))
+		group_by(Subject,Activity) %>%
+			summarise_each(funs(mean))
 
 # 6.	Write into a tidy.txt file. Using write.table() defaults. User can read file with: read.table("tidy.txt", header = TRUE)
 write.table(tidy, "tidy.txt")
