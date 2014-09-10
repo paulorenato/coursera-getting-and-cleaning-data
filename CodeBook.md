@@ -20,14 +20,14 @@ Here is a sample of the dataset.  Note that, for clarity, only the first 6 rows 
 6       1   WALKING_UPSTAIRS      -0.35470803     -0.002320265      -0.01947924          -0.9563670
 ```
 
-The dataset **tidy.txt** contains 180 rows and 68 columns. The first two columns correspond to the Subject and Actvity, whereas the remaining 66 contain average of the *mean* and *std* (standard deviation) variables in the original data set (i.e 33 for means and 33 for stds). There are 30 subjects an 6 activities in the datashet resulting on a total of  30x6 = 180 rows.
+The dataset **tidy.txt** contains 180 rows and 68 columns. The first two columns correspond to the Subject and Actvity, whereas the remaining 66 contain average of the *mean* and *std* (standard deviation) for variables in the original data set (i.e 33 for means and 33 for stds). There are 30 subjects an 6 activities in the dataset resulting in a total of 30x6 = 180 rows.
 
 ### Variable Definitions
 **Subject**  
 A number between 1 and 30 identifying one of the thirty participants in the study. 
 
 **Activity**  
-One of the six activities being performed by the subject when the measurement was performed. Possible values:
+A string specifying one of the six activities being performed by the subject when the measurement was taken. Possible values:
 * WALKING  
 * WALKING_UPSTAIRS  
 * WALKING_DOWNSTAIRS  
@@ -36,6 +36,6 @@ One of the six activities being performed by the subject when the measurement wa
 * LAYING  
 
 **Averaged Variables**  
-The 66 variables that were measured with the accelerometer averaged for the group defined in each row. A prefix of **t** means a time domain measurement whereas a prefix of **f** denotes a frequency domain measurement. For details on the definition of each varaible, please refer to the study website at:  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.  
+The 66 variables that were measured with the accelerometer averaged for the group defined in each row. A prefix of **t** means a time domain measurement whereas a prefix of **f** corresponds to a frequency domain measurement. For details on the definition of each variable, please refer to the study website at:  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.  
 
 ## End
